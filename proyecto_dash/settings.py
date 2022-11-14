@@ -77,10 +77,10 @@ DATABASES = {
         "ENGINE": "mssql",
         "NAME": "ProyectoDash",
         "USER": "sa",
-        # "PASSWORD": "andres1234",
-        "PASSWORD": "juan1234",
-        "HOST": "26.54.146.40",
-        # "HOST": "localhost",
+        "PASSWORD": "andres1234",
+        # "PASSWORD": "juan1234",
+        # "HOST": "26.54.146.40",
+        "HOST": "localhost",
         "PORT": "1433",
         "OPTIONS": {"driver": "ODBC Driver 17 for SQL Server", 'charset': 'utf8',
                     'use_unicode': True,
@@ -125,8 +125,8 @@ AUTH_USER_MODEL = 'unisinu.User'
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = '/static/'
-# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-STATICFILES_DIRS = ( os.path.join('static'), )
+STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
+
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
